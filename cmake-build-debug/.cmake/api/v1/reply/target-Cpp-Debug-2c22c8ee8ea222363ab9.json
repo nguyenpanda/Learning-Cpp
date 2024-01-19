@@ -1105,43 +1105,43 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec6_.cpp",
+			"path" : "CppClassLecture/ClassLec6_VirtualFunction.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec7_.cpp",
+			"path" : "CppClassLecture/ClassLec7_Abstraction.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec8_.cpp",
+			"path" : "CppClassLecture/ClassLec8_OperatorOverloading.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec9_.cpp",
+			"path" : "CppClassLecture/ClassLec9_FriendFunction.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec10_.cpp",
+			"path" : "CppClassLecture/ClassLec10_Constructor.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec11_.cpp",
+			"path" : "CppClassLecture/ClassLec11_Destructor.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CppClassLecture/ClassLec12_.cpp",
+			"path" : "CppClassLecture/ClassLec12_CopyConstructor.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -1,9 +1,10 @@
 # Learn C++
 
-Welcome to the **Learn C++** repository! This repository contains a collection of C++ lectures from the **Bro Code** YouTube channel, designed to help you learn and master C++ programming.
+Welcome to the **Learn C++** repository! This repository contains a collection of C++ lectures from the **Bro Code**, **CodeBeauty** YouTube channel, designed to help you learn and master C++ programming.
 
-You can access the corresponding video lectures on the Bro Code YouTube channel using the following link:
-[Bro Code YouTube Channel](https://youtu.be/-TkoO8Z07hI?si=rYnUuOrNmRnI0JRL)
+You can access the corresponding video lectures on YouTube using the following link:
+- [Bro Code - C++ Full Course for free ⚡️](https://youtu.be/-TkoO8Z07hI?si=rYnUuOrNmRnI0JRL)
+- [CodeBeauty - C++ Object-Oriented Programming](https://youtube.com/playlist?list=PL43pGnjiVwgTJg7uz8KUGdXRdGKE0W_jN&si=rbYezy_z8tflPBbc)
 
 ## Getting Started
 
@@ -20,7 +21,7 @@ The repository is organized as follows:
 
 1. Clone this repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/nguyenpanda/LearnCpp
+   git clone https://github.com/nguyenpanda/Learn-Cpp
    ```
 
 2. Navigate to the `CppLecture/` directory to find the specific lecture you are interested in.

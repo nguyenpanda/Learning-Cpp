@@ -2,7 +2,6 @@
 // Created by Hà Tường Nguyên on 9/20/23.
 //
 
-#include <list>
 #include "ClassLecturePackage.h"
 
 class YouTubeChannel_Lec2 {
@@ -43,7 +42,4 @@ void ClassLec2(){
     ytChannel.addPublishVideo("C++ OOP Video");
 
     ytChannel.info();
-
-    YouTubeChannel_Lec2 ytChannel2("CodeBeauty", "Saldina", 1800);
-    YouTubeChannel_Lec2 ytChannel3("CodeBeauty", "Saldina", 1800);
 }

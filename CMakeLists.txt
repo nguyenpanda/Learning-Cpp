@@ -135,13 +135,13 @@ add_executable(Cpp
         CppClassLecture/ClassLec3_Encapsulation.cpp
         CppClassLecture/ClassLec4_Inheritance.cpp
         CppClassLecture/ClassLec5_Polymorphism.cpp
-        CppClassLecture/ClassLec6_.cpp
-        CppClassLecture/ClassLec7_.cpp
-        CppClassLecture/ClassLec8_.cpp
-        CppClassLecture/ClassLec9_.cpp
-        CppClassLecture/ClassLec10_.cpp
-        CppClassLecture/ClassLec11_.cpp
-        CppClassLecture/ClassLec12_.cpp
+        CppClassLecture/ClassLec6_VirtualFunction.cpp
+        CppClassLecture/ClassLec7_Abstraction.cpp
+        CppClassLecture/ClassLec8_OperatorOverloading.cpp
+        CppClassLecture/ClassLec9_FriendFunction.cpp
+        CppClassLecture/ClassLec10_Constructor.cpp
+        CppClassLecture/ClassLec11_Destructor.cpp
+        CppClassLecture/ClassLec12_CopyConstructor.cpp
         CppClassLecture/ClassLec13_.cpp
         CppClassLecture/ClassLec14_.cpp
         CppClassLecture/ClassLec15_.cpp

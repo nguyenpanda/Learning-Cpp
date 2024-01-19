@@ -5,7 +5,7 @@
 #include "ClassLecturePackage.h"
 
 void ClassLec12(){
-    std::cout << "\t\tORIENTED OBJECT PROGRAMMING" << endl << "Lecture 12: \n" << std::endl;
+    std::cout << "\t\tORIENTED OBJECT PROGRAMMING" << endl << "Lecture 12: Copy Constructor\n" << std::endl;
 
 
 }

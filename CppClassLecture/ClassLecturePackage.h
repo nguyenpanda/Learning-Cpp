@@ -5,7 +5,9 @@
 #ifndef ClassLecturePackage_h
 #define ClassLecturePackage_h
 
+#include <list>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void ClassLec1();

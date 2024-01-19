@@ -2,7 +2,6 @@
 // Created by Hà Tường Nguyên on 9/20/23.
 //
 
-#include <list>
 #include "ClassLecturePackage.h"
 
 class YouTubeChannel_Lec1{

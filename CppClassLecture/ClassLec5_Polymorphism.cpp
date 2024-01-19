@@ -2,10 +2,10 @@
 // Created by Hà Tường Nguyên on 9/20/23.
 //
 
+#include <utility>
+
 #include "ClassLecturePackage.h"
 // std::move(): Transfer ownership of the value from Name to this ->, avoiding copy it
-#include <list>
-
 
 class YouTubeChannel_Lec5 {
     // Encapsulation = dong goi
@@ -21,8 +21,8 @@ protected: // Allow all children class access, but not the external code
 public:
     // THIS IS CALLED CONSTRUCTOR
     YouTubeChannel_Lec5(string name, string ownerName) {
-        this->Name = name;
-        this->OwnerName = ownerName;
+        this->Name = std::move(name);
+        this->OwnerName = std::move(ownerName);
         this->ContentQuality = 0;
         this->SubscribersCount = 0;
     }
@@ -71,20 +71,20 @@ public:
 
 class CookingYouTubeChannel_Lec5 : public YouTubeChannel_Lec5 {
 public:
-    CookingYouTubeChannel_Lec5(string name, string OwnerName) : YouTubeChannel_Lec5(name, OwnerName) {
+    CookingYouTubeChannel_Lec5(string name, string OwnerName) : YouTubeChannel_Lec5(std::move(name), std::move(OwnerName)) {
 
     }
 
     // Polymorphism
     void Practice() {
-        cout << OwnerName << " taking a singing class, learning new songs, learn how to dance..." << endl;
+        cout << OwnerName << " taking a cooking class, learning ingredient, learn how to make sushi..." << endl;
         ContentQuality++;
     }
 };
 
 class SingerYouTubeChannel_Lec5 : public YouTubeChannel_Lec5 {
 public:
-    SingerYouTubeChannel_Lec5(string name, string OwnerName) : YouTubeChannel_Lec5(name, OwnerName) {
+    SingerYouTubeChannel_Lec5(string name, string OwnerName) : YouTubeChannel_Lec5(std::move(name), std::move(OwnerName)) {
 
     }
 
@@ -118,13 +118,14 @@ void ClassLec5() {
     SingingYbChannel1.Practice();
     SingingYbChannel1.Practice();
 
-    YouTubeChannel_Lec5 *yt1 = &CookingYbChannel1;
-    YouTubeChannel_Lec5 *yt2 = &SingingYbChannel1;
-
-    yt1->CheckAnalytics();
-    yt2->CheckAnalytics();
-
+    // Using reference to access the method in Class
     CookingYbChannel1.CheckAnalytics();
     SingingYbChannel1.CheckAnalytics();
+
+    // Using pointer to access the method in Class
+    YouTubeChannel_Lec5 *yt1 = &CookingYbChannel1;
+    YouTubeChannel_Lec5 *yt2 = &SingingYbChannel1;
+    yt1->CheckAnalytics();
+    yt2->CheckAnalytics();
 
 }

@@ -6,21 +6,39 @@
 
 class Instrument {
 public:
-    virtual void makeSound() {
+    virtual void makeSound(){
         cout << "Instrument playing..." << endl;
     }
 
+    // Pure virtual function which makes sure that every function in the derived class has those function
+    virtual void makeBy() = 0;
+    //    If a class has at least 1 pure virtual function, it becomes an abstract class
 };
 
 class Accordion : public Instrument {
 public:
-    void makeSound() {
+    void makeSound(){
         cout << "Accordion playing..." << endl;
+    }
+
+    void makeBy(){
+        cout << "Wooden Accordion" << endl;
+    }
+};
+
+class Piano : public Instrument{
+public:
+    void makeSound(){
+        cout << "Piano playing..." << endl;
+    }
+
+    void makeBy(){
+        cout << "Wooden Piano" << endl;
     }
 };
 
 void ClassLec6() {
-    std::cout << "\t\tORIENTED OBJECT PROGRAMMING" << endl << "Lecture 6: VIRTUAL, ABSTRACT \n" << std::endl;
+    std::cout << "\t\tORIENTED OBJECT PROGRAMMING" << endl << "Lecture 6: VIRTUAL, ABSTRACT\n" << std::endl;
 
     // Virtual function: a function is defined in base class, then redefined in the child class
     /*
@@ -33,12 +51,18 @@ void ClassLec6() {
      * Điều này cho phép bạn sử dụng đa hình để thực hiện các thao tác trên `[var]` như một đối tượng `Instrument`, đồng thời giữ được tính đa hình,
      * có nghĩa là nếu có các phương thức ảo trong lớp cơ sở `Instrument`, chúng sẽ được triển khai trong lớp dẫn xuất `Accordion`.
      */
-    Instrument a;
-    a.makeSound();
-    Accordion b;
-    b.makeSound();
-    Instrument* c =  new Accordion();
-    c->makeSound();
-    Instrument* d =  new Accordion;
-    d->makeSound();
+
+    Accordion accordion;
+    accordion.makeSound();
+
+    Piano piano;
+    piano.makeSound();
+
+    cout << setw(20) << setfill('-') << "" << endl;
+
+    Instrument* p_accordion = new Accordion();
+    p_accordion->makeSound();
+
+    Instrument* p_piano =  new Piano();
+    p_piano->makeSound();
 }
